@@ -588,6 +588,5 @@ Enquanto o Render faz o deploy, ele irá gerar um link semelhante a este:
 
 https://serverpicooo.onrender.com
 
-Copie esse link e configure-o no seu código C conforme mostrado nos passos anteriores. Após finalizar o deploy, verifique no Serial Monitor se a localização do joystick está sendo enviada corretamente. E agora voce pode acompanhar em tempo real as coredenadas da busssola e os logs do servidor no endereço do seu servidor e so clicar no link gerado.
-
+Copie esse link e configure-o no seu código C conforme mostrado nos passos anteriores. Após finalizar o deploy, verifique no Serial Monitor se a localização do joystick está sendo enviada corretamente.E agora você pode acompanhar em tempo real as coordenadas da bússola e os logs do servidor no endereço do seu servidor. É só clicar no link gerado.
 
