@@ -1,6 +1,6 @@
-# Configurando a Raspberry Pi Pico W para Enviar Mensagens a um Servidor Flask
+# Configurando a Raspberry Pi Pico W para Enviar Direções do Joystick a um Servidor Flask Hospedado no Render
 
-Este projeto configura uma Raspberry Pi Pico W para enviar mensagens HTTP GET a um servidor Flask local.
+Este projeto utiliza a Raspberry Pi Pico W para ler as coordenadas de um joystick, determinar sua direção e enviá-la a um servidor Flask hospedado no Render via requisições HTTP.
 
 ## Requisitos
 
