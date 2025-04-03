@@ -550,14 +550,14 @@ Com seus arquivos configurados e prontos, vamos colocar seu servidor online.
 ### 1 Enviando o servidor para o GitHub
 
 Primeiro, envie o código do servidor para um novo repositório no GitHub usando o Git:
-
+```git
 git init
 git add .
 git commit -m "Primeiro commit"
 git branch -M main
 git remote add origin https://github.com/seu-usuario/seu-repositorio.git
 git push -u origin main
-
+```
 ### 2 Configurando o Render
 
 Após o repositório estar no GitHub, vamos fazer a hospedagem no Render.
