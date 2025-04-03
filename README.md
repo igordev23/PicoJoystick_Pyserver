@@ -185,8 +185,17 @@ Ajuste o endereço na parte do código abaixo:
 #define HOST "serverpicoou.onrender.com" // O endereço deve ser sem http:// ou https://
 #define URL_REQUEST "/mensagem?msg=" // Não altere essa parte
 ```
+### 5. Hardware utilizado
 
-### 5. Código C
+Para este projeto, utilizamos os seguintes componentes de hardware:
+
+- **Raspberry Pi Pico W** – Microcontrolador principal responsável por coletar os dados do joystick e enviá-los ao servidor.
+- **Joystick analógico (ADC 26 e ADC 27)** – Usado para capturar as coordenadas X e Y e determinar a direção do movimento.
+- **Wi-Fi embutido da Pico W** – Para conexão com a internet e envio dos dados via HTTP.
+
+Caso deseje expandir o projeto, pode-se adicionar mais sensores ou botões para novas funcionalidades.
+
+### 6. Código C
 
 Este é o código principal para leitura e envio das coordenadas X e Y do joystick, nomeado como `picow_http_client.c`
 
