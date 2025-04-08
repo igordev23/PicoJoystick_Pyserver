@@ -575,16 +575,23 @@ Acesse Render e crie uma conta.
 
 No dashboard do Render, clique no botão New no canto superior direito.
 
+![Dashboard do Render](assets/dashboard.png)
+
+
 Escolha a opção Web Service.
+
+![imagem do webservice](assets/webservice.png)
 
 Conecte sua conta do GitHub e selecione o repositório onde está o servidor Flask.
 
+![Repo Github](assets/github.png)
 O Render configurará automaticamente o ambiente. Apenas ajuste o campo Root Directory, 
 digitando apenas:
 ```txt
 .
 
 ```
+![rootdirectory](assets/root.png)
 
 
 Se for apenas para testes, selecione Instance Type: Free.
