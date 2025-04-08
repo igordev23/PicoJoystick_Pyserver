@@ -606,3 +606,6 @@ https://serverpicooo.onrender.com
 
 Copie esse link e configure-o no seu código C conforme mostrado nos passos anteriores. Após finalizar o deploy, verifique no Serial Monitor se a localização do joystick está sendo enviada corretamente. E agora você pode acompanhar em tempo real as coordenadas da bússola e os logs do servidor no endereço do seu servidor. É só clicar no link gerado.
 
+Aqui está como o site HTML deverá aparecer após a configuração:
+
+![Site](assets/html.png)
