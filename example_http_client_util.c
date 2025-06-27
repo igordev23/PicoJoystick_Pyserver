@@ -47,15 +47,23 @@ err_t http_client_header_print_fn(__unused httpc_state_t *connection, __unused v
 }
 
 // Print body to stdout
-err_t http_client_receive_print_fn(__unused void *arg, __unused struct altcp_pcb *conn, struct pbuf *p, err_t err) {
-    HTTP_INFO("\ncontent err %d\n", err);
+err_t http_client_receive_print_fn(void *arg, struct altcp_pcb *conn, struct pbuf *p, err_t err) {
+    if (!p) {
+        // Servidor fechou a conexão - encerra localmente também
+        printf("\nConexão encerrada pelo servidor. Fechando localmente...\n");
+        altcp_close(conn);
+        return ERR_OK;
+    }
+    printf("\ncontent err %d\n", err);
     u16_t offset = 0;
     while (offset < p->tot_len) {
         char c = (char)pbuf_get_at(p, offset++);
-        HTTP_INFOC(c);
+        putchar(c);
     }
+    pbuf_free(p); // libera buffer lido
     return ERR_OK;
 }
+
 
 
 static err_t internal_header_fn(httpc_state_t *connection, void *arg, struct pbuf *hdr, u16_t hdr_len, u32_t content_len) {

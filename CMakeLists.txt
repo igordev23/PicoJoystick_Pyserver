@@ -50,8 +50,8 @@ target_include_directories(example_lwip_http_util INTERFACE
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(picow_http_client picow_http_client.c )
-set(WIFI_SSID "SuaRedeWiFi")
-set(WIFI_PASSWORD "SuaSenhaWiFi")
+set(WIFI_SSID "Casa")
+set(WIFI_PASSWORD "KYOUSOU34")
 target_compile_definitions(picow_http_client PRIVATE
         WIFI_SSID=\"${WIFI_SSID}\"
         WIFI_PASSWORD=\"${WIFI_PASSWORD}\"
